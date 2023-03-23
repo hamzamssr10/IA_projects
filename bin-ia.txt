@@ -1,0 +1,9 @@
+OpenPose is a popular library for human pose estimation that can detect the skeletal structure of a person in an image or video. While OpenPose is primarily designed for detecting human poses, it might be possible to adapt it to detect the “skeleton” of a wire in an image.
+
+However, keep in mind that this would likely require significant modifications to the OpenPose model and training data. OpenPose is trained on images of humans and might not perform well on images of wires without additional training. Additionally, the concept of a “skeleton” for a wire might not be well-defined and would require careful consideration when designing the model.
+
+In summary, while it might be possible to use OpenPose to detect the skeleton of a wire in an image, this would likely require significant effort and expertise in machine learning and computer vision.
+
+**************************************************************************************************************************************************************************************
+so rigth now i have to idea, the first is to use the segmentation point to calculate the length of the wires.
+the second one is to use openpose, or a deeplearning model .
