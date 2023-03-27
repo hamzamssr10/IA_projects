@@ -37,3 +37,17 @@ def integrand(t):
 arc_length = quad(integrand, u[0], u[-1])[0]
 
 print(f'The length of the wire is {arc_length} pixels')
+
+
+#############################################################################
+import math
+
+def calculate_wire_length(points, scale):
+    length = 0
+    for i in range(len(points)-1):
+        p1 = points[i]
+        p2 = points[i+1]
+        distance = math.sqrt((p2[0]-p1[0])**2 + (p2[1]-p1[1])**2)
+        length += distance
+    return length * scale
+
